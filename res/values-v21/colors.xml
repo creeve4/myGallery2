@@ -15,27 +15,27 @@
 -->
 <resources>
     <!-- configuration for album set page -->
-    <color name="albumset_background">#ff171717</color>
+    <color name="albumset_background">#303030</color>
     <color name="albumset_placeholder">#252525</color>
     <color name="albumset_label_background">#EE252525</color>
     <color name="albumset_label_title">#FBFBFB</color>
     <color name="albumset_label_count">#A9ABAD</color>
 
     <!-- configuration for album page -->
-    <color name="album_background">#ff171717</color>
+    <color name="album_background">#303030</color>
     <color name="album_placeholder">#252525</color>
 
     <!-- configuration for photo page -->
-    <color name="photo_background">#ff171717</color>
+    <color name="photo_background">#303030</color>
     <color name="photo_placeholder">#252525</color>
 
     <!-- configuration for manage cache page -->
-    <color name="cache_background">#ff171717</color>
+    <color name="cache_background">#303030</color>
     <color name="cache_placeholder">#252525</color>
 
     <color name="bitmap_screennail_placeholder">#252525</color>
 
-    <color name="slideshow_background">#ff171717</color>
+    <color name="slideshow_background">#303030</color>
 
     <color name="button_dark_transparent_background">#1d1d1d</color>
 
@@ -43,12 +43,12 @@
     <color name="ingest_date_tile_text">#777777</color>
 
     <!-- FAB -->
-    <color name="fab">@color/accent</color>
-    <color name="floating_action_button_touch_tint">#F44336</color>
+    <color name="fab">#1565C0</color>
+    <color name="floating_action_button_touch_tint">#2196F3</color>
     <color name="floating_action_button_icon_color">#ffffff</color>
 
-    <color name="primary">#333333</color>
-    <color name="primary_dark">#212121</color>
-    <color name="accent">#FF7043</color>
+    <color name="primary">#D84315</color>
+    <color name="primary_dark">#BF360C</color>
+    <color name="accent">#5293ff</color>
     <color name="textColor">#ffffff</color>
 </resources>
