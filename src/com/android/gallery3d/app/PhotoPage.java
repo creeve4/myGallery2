@@ -727,20 +727,14 @@ public abstract class PhotoPage extends ActivityState implements
         }
 
         Intent intent = new Intent(ACTION_NEXTGEN_EDIT);
-
+        intent.setClass(mActivity, FilterShowActivity.class);
         intent.setDataAndType(current.getContentUri(), current.getMimeType())
-                .setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-        if (mActivity.getPackageManager()
-                .queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY).size() == 0) {
-            intent.setAction(Intent.ACTION_EDIT);
-        }
+            .setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         intent.putExtra(FilterShowActivity.LAUNCH_FULLSCREEN,
                 mActivity.isFullscreen());
-        ((Activity) mActivity).startActivityForResult(Intent.createChooser(intent, null),
-                REQUEST_EDIT);
+        mActivity.startActivityForResult(intent, REQUEST_EDIT);
         overrideTransitionToEditor();
     }
-
     private void launchSimpleEditor() {
         MediaItem current = mModel.getMediaItem(0);
         if (current == null || (current.getSupportedOperations()
