@@ -15,7 +15,7 @@
 -->
 
 <resources>
-    <style name="Theme.GalleryBase" parent="@android:style/Theme.Material">
+    <style name="Theme.GalleryBase" parent="android:Theme.Material">
         <item name="android:colorPrimary">@color/primary</item>
         <item name="android:colorPrimaryDark">@color/primary_dark</item>
         <item name="android:colorAccent">@color/accent</item>
@@ -24,15 +24,16 @@
         <item name="android:dialogTheme">@style/DialogTheme</item>
         <item name="android:alertDialogTheme">@style/DialogTheme</item>
         <item name="android:popupTheme">@style/PopupThemePrimary</item>
-        <item name="android:actionModeBackground">@drawable/actionmode_background</item>
     </style>
-    <style name="DialogTheme" parent="@android:style/Theme.Material.Dialog">
+    <style name="DialogTheme" parent="android:Theme.Material.Dialog">
         <item name="android:colorAccent">@color/accent</item>
     </style>
     <style name="Theme.Gallery" parent="Theme.GalleryBase">
         <item name="android:displayOptions"></item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:actionBarStyle">@style/Material.ActionBar</item>
+        <item name="android:colorBackground">@color/albumset_background</item>
+        <item name="android:actionModeBackground">@color/albumset_background</item>
     </style>
     <style name="Theme.Crop" parent="Theme.GalleryBase">
         <item name="android:displayOptions"></item>
